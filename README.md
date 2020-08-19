@@ -1,4 +1,4 @@
-# AmplifyTestApp
+# mahulerachit.github.io
 
 A new Flutter project.
 
