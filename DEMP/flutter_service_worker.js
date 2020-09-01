@@ -57,16 +57,16 @@ const RESOURCES = {
 "assets/assets/images/smart_farm/planted_field.png": "b02b864335206ad6d31afd7e72f8d61e",
 "assets/assets/images/smart_farm/sell.png": "8fd447e00a3349f3ef715253f6a28c9b",
 "assets/assets/images/smart_farm/smart_farm.png": "c5157f0a0b15b85eab9b253bb5be742e",
-"assets/FontManifest.json": "66b56a544ba57ece0d428ed6934019dd",
-"assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/NOTICES": "6301a8314ba87454b523115452e7e363",
+"assets/FontManifest.json": "2ff00b3343af5f9f081988524d21526a",
+"assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
+"assets/NOTICES": "2678a715b91ae0428bf527e75d6af94a",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "favicon.png": "d1ffea6c39ce92ae07b089ccc8093e8f",
 "icons/Icon-192.png": "fe8bba53196ea7704a4495b74892ac1e",
 "icons/Icon-512.png": "ff68c61b607ed98f619ef3d43d5b6385",
 "index.html": "1c9ab756122ee2862f5fa796c6331853",
 "/": "1c9ab756122ee2862f5fa796c6331853",
-"main.dart.js": "f1e18fc3ecc1205893be545e6afd88a0",
+"main.dart.js": "201181585eb500e0a373137bd6f4e790",
 "manifest.json": "09ffbd1540cbbca5a49798e3e569cd27"
 };
 
@@ -84,8 +84,8 @@ const CORE = [
 self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
-      // Provide a no-cache param to ensure the latest version is downloaded.
-      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'no-cache'})));
+      // Provide a 'reload' param to ensure the latest version is downloaded.
+      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
@@ -168,7 +168,7 @@ self.addEventListener("fetch", (event) => {
         // Either respond with the cached resource, or perform a fetch and
         // lazily populate the cache. Ensure the resources are not cached
         // by the browser for longer than the service worker expects.
-        var modifiedRequest = new Request(event.request, {'cache': 'no-cache'});
+        var modifiedRequest = new Request(event.request, {'cache': 'reload'});
         return response || fetch(modifiedRequest).then((response) => {
           cache.put(event.request, response.clone());
           return response;
