@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "6ff6332a5f0ee70169e0bd6405a8c204",
+  "assets/AssetManifest.json": "3b02b7eb54ee46fd46c1b2cac0bef2d4",
 "assets/assets/fonts/NotoSans-Bold.ttf": "6a1f7cfe6252b44b6ea1e3fbf5b6661b",
 "assets/assets/fonts/NotoSans-Regular.ttf": "21f6235482ecdf67217dfa18483f7716",
 "assets/assets/fonts/NotoSans-SemiBold.ttf": "e2c2bc20049bf8fc82a94927ae111294",
@@ -64,12 +64,13 @@ const RESOURCES = {
 "assets/assets/images/project_dash/gas_color.png": "68db0f7adcc74836dec2e9b9145a02f0",
 "assets/assets/images/project_dash/house_color.png": "5cbc076d57442bcf9b24e7125aa89e5f",
 "assets/assets/images/project_dash/island_icons/base.png": "eedd2868278da75b846c374bacfb9ef2",
-"assets/assets/images/project_dash/island_icons/battery.png": "a55a48b79d632b9294a2072e41aa34db",
-"assets/assets/images/project_dash/island_icons/biogas.png": "871f1675f06a28d784004594b4ba5236",
-"assets/assets/images/project_dash/island_icons/home.png": "daf34a3e1a50f40cade0603421545721",
-"assets/assets/images/project_dash/island_icons/pea.png": "e413fdcbe32ff36435397297e47e18dc",
-"assets/assets/images/project_dash/island_icons/solar.png": "60dae98370df31dfb9b0d3a096caf1e3",
-"assets/assets/images/project_dash/island_icons/wind_turbine.png": "27e789dcb1b702147d5d4faa1fb94864",
+"assets/assets/images/project_dash/island_icons/battery.png": "324765d09ac227fa0d5eb5f73bd0d31f",
+"assets/assets/images/project_dash/island_icons/biogas.png": "6684bb710bb2ac6ac2353dd48003558c",
+"assets/assets/images/project_dash/island_icons/home.png": "14bb8b250163237cf716d85a1090ee2b",
+"assets/assets/images/project_dash/island_icons/pea.png": "4fc68f4211d722d79d747206b03b1aaa",
+"assets/assets/images/project_dash/island_icons/popup.gif": "7693280b8c9a78b81b87057c9d461bb3",
+"assets/assets/images/project_dash/island_icons/solar.png": "c15d1a7de0a4e10d063c85cb0c96fe05",
+"assets/assets/images/project_dash/island_icons/wind_turbine.png": "3fd59309860dd3f5644b140cad92c8d8",
 "assets/assets/images/project_dash/solar.png": "2e99d6092300a9d70ab7392b47545e97",
 "assets/assets/images/project_dash/solar_color.png": "a45a331dd7ae5c29e1ddf537e2e06bec",
 "assets/assets/images/project_dash/total_energy.png": "d06bbb63147afb5b0bd73a47c28bc3c4",
@@ -128,7 +129,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "ff68c61b607ed98f619ef3d43d5b6385",
 "index.html": "1c9ab756122ee2862f5fa796c6331853",
 "/": "1c9ab756122ee2862f5fa796c6331853",
-"main.dart.js": "739c0cba14ed16f1746d8d8028e14f30",
+"main.dart.js": "dc86c5cbfc395b1aa62cc92e93100dd7",
 "manifest.json": "09ffbd1540cbbca5a49798e3e569cd27"
 };
 
