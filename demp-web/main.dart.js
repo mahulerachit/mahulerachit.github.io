@@ -42858,13 +42858,14 @@ hf:function(){return T.an(H.a([new B.dO(this.d.u("island_mode").toUpperCase(),ne
 abY:function(){var s=this,r="island_mode",q=null,p=s.d.u(r),o=s.d.u("edit"),n=K.ah(20),m=L.x(s.d.u(r)+" ("+s.d.u("mode")+" 1)",q,q,q,A.ag(q,q,C.m,q,q,q,q,q,q,q,q,17,q,C.E,q,q,!0,q,q,q,q,q,q),q)
 return D.cW(q,T.an(H.a([new B.dO(p.toUpperCase(),new B.are(s),o.toUpperCase(),q,q),C.p2,M.J(q,new O.SH(s.cy,new B.arf(s),s.cx,C.m,C.m,m,!0,q),q,q,new S.aj(q,q,q,n,q,new T.bM(C.aU,C.b5,C.Q,s.r,q,q),C.p),q,q,q,q,q,q),new T.b_(q,6,q,q),s.abW()],t.t),C.i,C.h,C.k),C.S,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new B.arg(s),q,q,q,q,q,q)},
 abW:function(){return T.a2(new B.eC(Y.aR(this.c,!1,t.TQ).x5(),new B.arb(this),!1,null,t.Hb),1)},
-oA:function(a,b,c,d){var s,r,q=null,p=a[1]
+oA:function(a,b,c,d){var s,r,q=null,p=this.e.a,o=p===0?0:C.x.W(d/p*100)
+p=a[1]
 p.toString
 s=J.aB(p)
 p=H.a([new O.bB(2,P.ae(C.x.W(127.5),(16711680&s.gn(p))>>>16,(65280&s.gn(p))>>>8,(255&s.gn(p))>>>0),new P.j(2,2),7)],t.Q)
 s=U.dC("assets/images/project_dash/island_icons/"+this.db[b]+".png",q,C.ba,!1,20,C.an,20)
 r=A.ag(q,q,C.m,q,q,q,q,q,q,q,q,12,q,C.w,q,q,!0,q,q,q,q,q,q)
-return M.J(q,T.an(H.a([s,new T.b_(q,4,q,q),T.d7(q,q,C.a1,!0,q,new Q.Q(q,H.a([new Q.Q(c,q,q,r),new Q.Q("\n"+(b===0?"":""+C.x.W(d/this.e.a*100)+"%\n"),q,q,A.ag(q,q,C.m,q,q,q,q,q,q,q,q,14,q,C.w,q,q,!0,q,q,q,q,q,q)),new Q.Q(C.d.ay(d,2),q,q,A.ag(q,q,C.m,q,q,q,q,q,q,q,q,12,q,C.E,q,q,!0,q,q,q,q,q,q)),new Q.Q("\nkW",q,q,A.ag(q,q,C.m,q,q,q,q,q,q,q,q,10,q,q,q,q,!0,q,q,q,q,q,q))],t.R),q,q),C.M,q,q,1,C.F)],t.t),C.i,C.d3,C.T),q,q,new S.aj(q,q,q,q,p,new T.bM(C.aU,C.b5,C.Q,a,q,q),C.av),q,96,q,new V.Z(3,3,3,3),q,96)}}
+return M.J(q,T.an(H.a([s,new T.b_(q,4,q,q),T.d7(q,q,C.a1,!0,q,new Q.Q(q,H.a([new Q.Q(c,q,q,r),new Q.Q("\n"+(b===0?"":""+o+"%\n"),q,q,A.ag(q,q,C.m,q,q,q,q,q,q,q,q,14,q,C.w,q,q,!0,q,q,q,q,q,q)),new Q.Q(C.d.ay(d,2),q,q,A.ag(q,q,C.m,q,q,q,q,q,q,q,q,12,q,C.E,q,q,!0,q,q,q,q,q,q)),new Q.Q("\nkW",q,q,A.ag(q,q,C.m,q,q,q,q,q,q,q,q,10,q,q,q,q,!0,q,q,q,q,q,q))],t.R),q,q),C.M,q,q,1,C.F)],t.t),C.i,C.d3,C.T),q,q,new S.aj(q,q,q,q,p,new T.bM(C.aU,C.b5,C.Q,a,q,q),C.av),q,96,q,new V.Z(3,3,3,3),q,96)}}
 B.ari.prototype={
 $0:function(){var s=this.a
 return s.F(new B.arh(s))},
@@ -42961,31 +42962,32 @@ return new T.le(1,new G.Bn(Y.aGQ(Y.jf(r,!1),r,40,q,H.a([s.u7(0),s.u7(1),s.u7(2),
 u7:function(a){var s=null
 return Y.aGR(this.f[a],s,!1,s,s,s,this.r[a])}}
 G.add.prototype={
-$2:function(a,b){var s,r,q,p,o,n,m=null,l=b.b
-if(l===!0){l=this.a
-s=l.e=Y.aR(a,!1,t.bW).a
+$2:function(a,b){var s,r,q,p,o,n,m,l=null,k=b.b
+if(k===!0){k=this.a
+s=k.e=Y.aR(a,!1,t.bW).a
 r=s.c
 q=s.b
 p=s.a
 s=s.d
-o=l.x=r+q+p+s
-l.r=H.a([r*100/o,q*100/o,p*100/o,s*100/o],t.r)
-s=l.y
+o=k.x=r+q+p+s
+n=t.r
+k.r=o===0?H.a([0.1,0.1,0.1,0.1],n):H.a([r*100/o,q*100/o,p*100/o,s*100/o],n)
+s=k.y
 if(s!=null)s=s<4
 else s=!1
-n=s&&!0
-s=l.aca()
-r=n?L.x(""+C.d.cv(l.r[l.y])+"%",m,m,m,A.ag(m,m,l.f[l.y],m,m,m,m,m,m,m,m,24,m,C.w,m,m,!0,m,m,m,m,m,m),m):M.J(m,m,m,m,m,m,m,m,m,m,m)
+m=s&&!0
+s=k.aca()
+r=m?L.x(""+C.d.cv(k.r[k.y])+"%",l,l,l,A.ag(l,l,k.f[k.y],l,l,l,l,l,l,l,l,24,l,C.w,l,l,!0,l,l,l,l,l,l),l):M.J(l,l,l,l,l,l,l,l,l,l,l)
 q=t.t
-r=T.a2(T.aD(H.a([T.a2(T.d9(C.L,H.a([s,r],q),C.O,C.az,m,C.as,m),1),T.d7(m,m,C.a1,!0,m,new Q.Q(m,H.a([new Q.Q(l.d.u("tot_energy"),m,m,A.ag(m,m,C.B.h(0,600),m,m,m,m,m,m,m,m,18,m,m,m,m,!0,m,m,m,m,m,m)),new Q.Q("\n"+C.d.ay(l.x,2)+" ",m,m,A.ag(m,m,l.f[0],m,m,m,m,m,m,m,m,24,m,C.E,m,m,!0,m,m,m,m,m,m)),new Q.Q("kW",m,m,A.ag(m,m,C.B.h(0,600),m,m,m,m,m,m,m,m,18,m,m,m,m,!0,m,m,m,m,m,m))],t.R),m,m),C.at,m,m,1,C.F)],q),C.i,C.h,C.k),4)
-s=l.d.u("electricity")
-s=l.wn(C.d.ay(l.e.c,2)+" kW","energy_color.png",s,l.y===0)
-p=l.d.u("solar")
-p=T.aD(H.a([s,l.wn(C.d.ay(l.e.b,2)+" kW","solar_color.png",p,l.y===1)],q),C.i,C.h,C.k)
-s=l.d.u("gas")
-s=l.wn(C.d.ay(l.e.a,2)+" kW","gas_color.png",s,l.y===2)
-o=l.d.u("wind")
-return T.a2(T.an(H.a([r,T.a2(T.an(H.a([p,C.p3,T.aD(H.a([s,l.wn(C.d.ay(l.e.d,2)+" kW","wind_color.png",o,l.y===3)],q),C.i,C.h,C.k)],q),C.i,C.bm,C.k),3)],q),C.i,C.h,C.k),1)}else return T.a2(T.bF(U.fU(m,m,m,m,4,m,m),m,m),1)},
+r=T.a2(T.aD(H.a([T.a2(T.d9(C.L,H.a([s,r],q),C.O,C.az,l,C.as,l),1),T.d7(l,l,C.a1,!0,l,new Q.Q(l,H.a([new Q.Q(k.d.u("tot_energy"),l,l,A.ag(l,l,C.B.h(0,600),l,l,l,l,l,l,l,l,18,l,l,l,l,!0,l,l,l,l,l,l)),new Q.Q("\n"+C.d.ay(k.x,2)+" ",l,l,A.ag(l,l,k.f[0],l,l,l,l,l,l,l,l,24,l,C.E,l,l,!0,l,l,l,l,l,l)),new Q.Q("kW",l,l,A.ag(l,l,C.B.h(0,600),l,l,l,l,l,l,l,l,18,l,l,l,l,!0,l,l,l,l,l,l))],t.R),l,l),C.at,l,l,1,C.F)],q),C.i,C.h,C.k),4)
+s=k.d.u("electricity")
+s=k.wn(C.d.ay(k.e.c,2)+" kW","energy_color.png",s,k.y===0)
+p=k.d.u("solar")
+p=T.aD(H.a([s,k.wn(C.d.ay(k.e.b,2)+" kW","solar_color.png",p,k.y===1)],q),C.i,C.h,C.k)
+s=k.d.u("gas")
+s=k.wn(C.d.ay(k.e.a,2)+" kW","gas_color.png",s,k.y===2)
+o=k.d.u("wind")
+return T.a2(T.an(H.a([r,T.a2(T.an(H.a([p,C.p3,T.aD(H.a([s,k.wn(C.d.ay(k.e.d,2)+" kW","wind_color.png",o,k.y===3)],q),C.i,C.h,C.k)],q),C.i,C.bm,C.k),3)],q),C.i,C.h,C.k),1)}else return T.a2(T.bF(U.fU(l,l,l,l,4,l,l),l,l),1)},
 $S:72}
 G.adc.prototype={
 $1:function(a){var s=this.a
