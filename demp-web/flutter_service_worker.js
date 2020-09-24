@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "107a89af24ccb469c42a4bf33f2774fd",
+  "assets/AssetManifest.json": "85f64b5c872aa08e8ecbbcdbf0f07569",
 "assets/assets/fonts/NotoSans-Bold.ttf": "6a1f7cfe6252b44b6ea1e3fbf5b6661b",
 "assets/assets/fonts/NotoSans-Regular.ttf": "21f6235482ecdf67217dfa18483f7716",
 "assets/assets/fonts/NotoSans-SemiBold.ttf": "e2c2bc20049bf8fc82a94927ae111294",
@@ -54,8 +54,8 @@ const RESOURCES = {
 "assets/assets/images/gifs/turbine03.gif": "c529c533ffddb1fe3d5a7294f9034a0e",
 "assets/assets/images/gifs/turbine04.gif": "594fe645e2499c38e46d8ba9d050187c",
 "assets/assets/images/gifs/turbine05.gif": "bf47f400242286fbd074aeda16fb522f",
-"assets/assets/images/logos/logo_only.png": "ecc63bd7a03bc8a697bd22d3ba46a5fe",
-"assets/assets/images/logos/logo_trim.png": "a19a9868761d5c277473d61bdd4ab23a",
+"assets/assets/images/logos/logo_only.png": "e893900efa8877fdfd0ee6aeb36218b7",
+"assets/assets/images/logos/logo_trim.png": "3c506b0f2c7dedcbff69644e892f3816",
 "assets/assets/images/project_dash/biogas_color.png": "443a8c1b9c4447794b66ec7b76ffeea3",
 "assets/assets/images/project_dash/biomass_color.png": "a34c617c2cd334b8af5cf01dce7dfeb7",
 "assets/assets/images/project_dash/co2.png": "7b86b622a016db712e191f6f63167ef1",
@@ -65,13 +65,14 @@ const RESOURCES = {
 "assets/assets/images/project_dash/gas_color.png": "68db0f7adcc74836dec2e9b9145a02f0",
 "assets/assets/images/project_dash/house_color.png": "5cbc076d57442bcf9b24e7125aa89e5f",
 "assets/assets/images/project_dash/island_icons/base.png": "eedd2868278da75b846c374bacfb9ef2",
-"assets/assets/images/project_dash/island_icons/battery.png": "324765d09ac227fa0d5eb5f73bd0d31f",
+"assets/assets/images/project_dash/island_icons/battery.png": "ab0525a33a8b4f3a3e861f25c0a9271e",
 "assets/assets/images/project_dash/island_icons/biogas.png": "6684bb710bb2ac6ac2353dd48003558c",
 "assets/assets/images/project_dash/island_icons/home.png": "14bb8b250163237cf716d85a1090ee2b",
 "assets/assets/images/project_dash/island_icons/pea.png": "4fc68f4211d722d79d747206b03b1aaa",
 "assets/assets/images/project_dash/island_icons/popup.gif": "7693280b8c9a78b81b87057c9d461bb3",
 "assets/assets/images/project_dash/island_icons/solar.png": "c15d1a7de0a4e10d063c85cb0c96fe05",
 "assets/assets/images/project_dash/island_icons/wind_turbine.png": "3fd59309860dd3f5644b140cad92c8d8",
+"assets/assets/images/project_dash/load.png": "eda1b4ee958294364320bcc263fc1b78",
 "assets/assets/images/project_dash/solar.png": "2e99d6092300a9d70ab7392b47545e97",
 "assets/assets/images/project_dash/solar_color.png": "a45a331dd7ae5c29e1ddf537e2e06bec",
 "assets/assets/images/project_dash/total_energy.png": "d06bbb63147afb5b0bd73a47c28bc3c4",
@@ -123,14 +124,14 @@ const RESOURCES = {
 "assets/assets/images/turbine01.gif": "a6a8bf5648e636639ff862ce9837ab0e",
 "assets/FontManifest.json": "2ff00b3343af5f9f081988524d21526a",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
-"assets/NOTICES": "bac2f83521ac6f87b87387218e5ec52c",
+"assets/NOTICES": "1cc01e8b11740397fd39fae3738cf8a8",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "favicon.png": "d1ffea6c39ce92ae07b089ccc8093e8f",
 "icons/Icon-192.png": "fe8bba53196ea7704a4495b74892ac1e",
 "icons/Icon-512.png": "ff68c61b607ed98f619ef3d43d5b6385",
-"index.html": "1c9ab756122ee2862f5fa796c6331853",
-"/": "1c9ab756122ee2862f5fa796c6331853",
-"main.dart.js": "6ff300cdb999aefb0ed9b1e47ccbc3be",
+"index.html": "fca6350fab7521e8b1c36bb18cc20eb1",
+"/": "fca6350fab7521e8b1c36bb18cc20eb1",
+"main.dart.js": "1d3b6c41bb2fe8d46f8f2ec856ee4346",
 "manifest.json": "09ffbd1540cbbca5a49798e3e569cd27"
 };
 
@@ -143,13 +144,12 @@ const CORE = [
 "assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
-
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
-      // Provide a 'reload' param to ensure the latest version is downloaded.
-      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'reload'})));
+      return cache.addAll(
+        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
     })
   );
 });
@@ -164,7 +164,6 @@ self.addEventListener("activate", function(event) {
       var tempCache = await caches.open(TEMP);
       var manifestCache = await caches.open(MANIFEST);
       var manifest = await manifestCache.match('manifest');
-
       // When there is no prior manifest, clear the entire cache.
       if (!manifest) {
         await caches.delete(CACHE_NAME);
@@ -178,7 +177,6 @@ self.addEventListener("activate", function(event) {
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
         return;
       }
-
       var oldManifest = await manifest.json();
       var origin = self.location.origin;
       for (var request of await contentCache.keys()) {
@@ -219,21 +217,26 @@ self.addEventListener("fetch", (event) => {
   var origin = self.location.origin;
   var key = event.request.url.substring(origin.length + 1);
   // Redirect URLs to the index.html
-  if (event.request.url == origin || event.request.url.startsWith(origin + '/#')) {
+  if (key.indexOf('?v=') != -1) {
+    key = key.split('?v=')[0];
+  }
+  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
     key = '/';
   }
   // If the URL is not the RESOURCE list, skip the cache.
   if (!RESOURCES[key]) {
     return event.respondWith(fetch(event.request));
   }
+  // If the URL is the index.html, perform an online-first request.
+  if (key == '/') {
+    return onlineFirst(event);
+  }
   event.respondWith(caches.open(CACHE_NAME)
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache. Ensure the resources are not cached
-        // by the browser for longer than the service worker expects.
-        var modifiedRequest = new Request(event.request, {'cache': 'reload'});
-        return response || fetch(modifiedRequest).then((response) => {
+        // lazily populate the cache.
+        return response || fetch(event.request).then((response) => {
           cache.put(event.request, response.clone());
           return response;
         });
@@ -248,7 +251,6 @@ self.addEventListener('message', (event) => {
   if (event.data === 'skipWaiting') {
     return self.skipWaiting();
   }
-
   if (event.message === 'downloadOffline') {
     downloadOffline();
   }
@@ -273,4 +275,26 @@ async function downloadOffline() {
     }
   }
   return contentCache.addAll(resources);
+}
+
+// Attempt to download the resource online before falling back to
+// the offline cache.
+function onlineFirst(event) {
+  return event.respondWith(
+    fetch(event.request).then((response) => {
+      return caches.open(CACHE_NAME).then((cache) => {
+        cache.put(event.request, response.clone());
+        return response;
+      });
+    }).catch((error) => {
+      return caches.open(CACHE_NAME).then((cache) => {
+        return cache.match(event.request).then((response) => {
+          if (response != null) {
+            return response;
+          }
+          throw error;
+        });
+      });
+    })
+  );
 }
