@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="bestHusbandEver">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>bestHusbandEver</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+       <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script> 
+       <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+       <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCkIKd7eN6_hI_vY8ZGTmWF1fognley0Gk",
+      authDomain: "best-husband-app.firebaseapp.com",
+      databaseURL: "https://best-husband-app.firebaseio.com",
+      projectId: "best-husband-app",
+      storageBucket: "best-husband-app.appspot.com",
+      messagingSenderId: "433439096108",
+      appId: "1:433439096108:web:ce140304cc86583fe80089"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1833461070');
+      });
+    }
+  </script>
+  <script src="main.dart.js?v=1833461070" type="application/javascript"></script>
+</body>
+</html>
