@@ -10,15 +10,15 @@ const RESOURCES = {
 "assets/assets/images/logo.png": "d9b0ee1724a512eab0cab0d5dd49d400",
 "assets/assets/images/logo_nyn.png": "fbc4ee7a70e8bc40074bccfde8bcd153",
 "assets/FontManifest.json": "b1635ad67dfb0079a01b1153912a9498",
-"assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
+"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/NOTICES": "174bfff11fdfbd37afcd289408848f58",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "beb9dc01d7eeb2b592b72ab05cd6fcf1",
-"/": "beb9dc01d7eeb2b592b72ab05cd6fcf1",
-"main.dart.js": "5702c7552aca9d894e293734e7f929b7",
+"index.html": "6d516b483a3bbe01ba3806030fe3b433",
+"/": "6d516b483a3bbe01ba3806030fe3b433",
+"main.dart.js": "cd4559fc38103c7b679db72497cd85b9",
 "manifest.json": "527f9d63d839d0d9b1bee55ecfda346c"
 };
 

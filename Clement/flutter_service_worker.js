@@ -9,15 +9,15 @@ const RESOURCES = {
 "assets/assets/pdf/sample.pdf": "d01129b86e0355249afbb84d20f5714f",
 "assets/assets/pdf/sample_long.pdf": "90560b3c45f18f1d5d7740f30200e9df",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
+"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/NOTICES": "3afc368d49a28f2a04b657bc9133c8c9",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "15db9cd6f2da4728146f312d2584030a",
-"/": "15db9cd6f2da4728146f312d2584030a",
-"main.dart.js": "4274d8c0593faa36320605015704c111",
+"index.html": "8d6315c49dd8caec914f9b22a557c193",
+"/": "8d6315c49dd8caec914f9b22a557c193",
+"main.dart.js": "bbbb74c95db29932ffebae30905d6d33",
 "manifest.json": "265a759412e4fadc36fad691df6f3c0f"
 };
 
