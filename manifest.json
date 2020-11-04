@@ -1,11 +1,11 @@
 {
-    "name": "DEMPProject",
-    "short_name": "DEMPProject",
+    "name": "test_todo_app",
+    "short_name": "test_todo_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Test App for Senior Flutter Developer role at Mobile Programming LLC.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
