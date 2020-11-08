@@ -175,14 +175,14 @@ const RESOURCES = {
 "assets/assets/images/youtube_logo_dark.png": "63bf76184f29caf950a689c87199d6d2",
 "assets/FontManifest.json": "9ded0c8015afd89b796032438987a59a",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "03b34ede45c79c53f6ee1bd8e1cf9a9f",
+"assets/NOTICES": "7272354cf8862d4df3e10989e0cff4b9",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "d871fac5a092a5d8a8131394cac840b7",
-"/": "d871fac5a092a5d8a8131394cac840b7",
-"main.dart.js": "224784435607b0eae30169309628d17a",
+"index.html": "73f5f28d595cdbe6a337de56fef1c0d2",
+"/": "73f5f28d595cdbe6a337de56fef1c0d2",
+"main.dart.js": "ea8ecb5d1fe04ac48281e5b313d1ea61",
 "manifest.json": "735e2b76f0e6ec0af2cfa39fae641b7b",
 "version.json": "9e5cd1a6ddc9f5a4c4d65dbc353cd8ce"
 };
