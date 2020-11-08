@@ -15,51 +15,53 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Test App for Senior Flutter Developer role at Mobile Programming LLC.">
+  <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="test_todo_app">
+  <meta name="apple-mobile-web-app-title" content="covid_19_app">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>test_todo_app</title>
+  <title>covid_19_app</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-       <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
-       
-       
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
 
   <script>
     // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     var firebaseConfig = {
-      apiKey: "AIzaSyBtizQ4uTC2bJWlgSNJjt5hnzCmZzEW2Js",
-      authDomain: "todotestapp-fd091.firebaseapp.com",
-      databaseURL: "https://todotestapp-fd091.firebaseio.com",
-      projectId: "todotestapp-fd091",
-      storageBucket: "todotestapp-fd091.appspot.com",
-      messagingSenderId: "229765278362",
-      appId: "1:229765278362:web:77cbe2fa4bcb11cd1f8d23"
+      apiKey: "AIzaSyAhSH8-OS_nXcZ9Zoq6UxUxQB4eiADSwQs",
+      authDomain: "covid-19-india-dashboard.firebaseapp.com",
+      databaseURL: "https://covid-19-india-dashboard.firebaseio.com",
+      projectId: "covid-19-india-dashboard",
+      storageBucket: "covid-19-india-dashboard.appspot.com",
+      messagingSenderId: "913314735972",
+      appId: "1:913314735972:web:fec7aca1e7a490e7a1fc71",
+      measurementId: "G-1LZZ1PB39N"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
   </script>
-
+  
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=656691245');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3542520114');
       });
     }
   </script>

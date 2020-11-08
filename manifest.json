@@ -1,11 +1,11 @@
 {
-    "name": "test_todo_app",
-    "short_name": "test_todo_app",
+    "name": "covid_19_app",
+    "short_name": "covid_19_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Test App for Senior Flutter Developer role at Mobile Programming LLC.",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
