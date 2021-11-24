@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "fb4dec94abde2451a9873b7bf8db98ed",
+  "assets/AssetManifest.json": "8f6fb45b0cee65979cb6c5391481601e",
 "assets/assets/fonts/Merriweather-Regular.ttf": "c97a9fc29652bb4afcdac68020e5d0f7",
 "assets/assets/fonts/Montserrat-Bold.ttf": "ade91f473255991f410f61857696434b",
 "assets/assets/fonts/Montserrat-Regular.ttf": "ee6539921d713482b8ccd4d0d23961bb",
@@ -174,15 +174,15 @@ const RESOURCES = {
 "assets/assets/images/youtube_icon_logo_only.png": "494954cfe89b7174398ee68f40113bd1",
 "assets/assets/images/youtube_logo_dark.png": "63bf76184f29caf950a689c87199d6d2",
 "assets/FontManifest.json": "9ded0c8015afd89b796032438987a59a",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "7272354cf8862d4df3e10989e0cff4b9",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
+"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
+"assets/NOTICES": "107f7bf661d8e21219e7e0cc97dfb2a2",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "73f5f28d595cdbe6a337de56fef1c0d2",
-"/": "73f5f28d595cdbe6a337de56fef1c0d2",
-"main.dart.js": "ea8ecb5d1fe04ac48281e5b313d1ea61",
+"index.html": "d8dc2fb3c5d15d07f04f8714ccde328b",
+"/": "d8dc2fb3c5d15d07f04f8714ccde328b",
+"main.dart.js": "9dd21faa41acedc9ce30692601632d1a",
 "manifest.json": "735e2b76f0e6ec0af2cfa39fae641b7b",
 "version.json": "9e5cd1a6ddc9f5a4c4d65dbc353cd8ce"
 };
@@ -202,7 +202,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
@@ -328,7 +328,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
