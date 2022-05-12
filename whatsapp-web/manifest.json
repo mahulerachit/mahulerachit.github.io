@@ -1,6 +1,6 @@
 {
-    "name": "unknown_whatsapp",
-    "short_name": "unknown_whatsapp",
+    "name": "unknownwhatsapp",
+    "short_name": "unknownwhatsapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
