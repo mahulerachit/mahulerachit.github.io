@@ -3,12 +3,14 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "5cda30360fa0466cc6f7cd267ca95f73",
+  "assets/AssetManifest.json": "a8894a8a48b72696ff7536bd3c1591c0",
 "assets/assets/animations/switch_dark_mode.flr": "7530828e9a6ad38f86475fc17fc578ee",
 "assets/assets/fonts/Montserrat-Bold.ttf": "d14ad1035ae6da4e5a71eca362a8d696",
 "assets/assets/fonts/Montserrat-Medium.ttf": "aca6287f22eef510c1e622c97bb1e1e1",
 "assets/assets/fonts/Montserrat-Regular.ttf": "34de1239b12123b85ff1a68b58835a1f",
 "assets/assets/fonts/Montserrat-Thin.ttf": "426a4b74bf1d6920508384899bfb695b",
+"assets/assets/images/avatar.png": "15f7f8db57254c438119bb5e875fc2d1",
+"assets/assets/images/avatar2.png": "ee56f58fca830d39c0267139781f1a8b",
 "assets/assets/images/avatar_dark.png": "50d11598353e6af49ddb88aec12d85ca",
 "assets/assets/images/avatar_dark2.png": "d09e42155e7bf88ddbd021eff51c240b",
 "assets/assets/images/citations/citation_00.png": "495bf7c5d2426f4a68a8927931f61319",
@@ -36,6 +38,11 @@ const RESOURCES = {
 "assets/assets/images/citations/citation_22.png": "91c8f634947a1590de8d7fd2eaf17e7c",
 "assets/assets/images/citations/citation_23.png": "8dcac562967812a5cf5bcfc0c681f188",
 "assets/assets/images/citations/citation_24.png": "cc8f8cbc195d6dcde68688bdd00aa102",
+"assets/assets/images/citations/citation_25.png": "f97978029fdd3478a84faaff0b31b2e0",
+"assets/assets/images/citations/citation_26.png": "fed76c58d751dfa847367e49593b6c36",
+"assets/assets/images/citations/citation_27.png": "b25cf565aadc3b428c951c8fc921456d",
+"assets/assets/images/citations/citation_28.png": "39372e6067f1443b7db93f89567ae09a",
+"assets/assets/images/citations/citation_29.png": "ab19b39aecc52c7c61f2f9ce8c32d98a",
 "assets/assets/images/citations/thumbnails/thumb_citation_00.png": "bd151d32e1a0ec64ef423626e131fd30",
 "assets/assets/images/citations/thumbnails/thumb_citation_01.png": "329747eec4057253ee383e9d171eaee4",
 "assets/assets/images/citations/thumbnails/thumb_citation_02.png": "a07e994b0ba9941a5c9f0d9a24f7e841",
@@ -61,6 +68,11 @@ const RESOURCES = {
 "assets/assets/images/citations/thumbnails/thumb_citation_22.png": "37495fa322ed97be401b8dcc522eda6c",
 "assets/assets/images/citations/thumbnails/thumb_citation_23.png": "b4005b79fbca692c70fa6f291bd164a0",
 "assets/assets/images/citations/thumbnails/thumb_citation_24.png": "670552c4327f5920643a02f2dd7433e0",
+"assets/assets/images/citations/thumbnails/thumb_citation_25.png": "f97978029fdd3478a84faaff0b31b2e0",
+"assets/assets/images/citations/thumbnails/thumb_citation_26.png": "fed76c58d751dfa847367e49593b6c36",
+"assets/assets/images/citations/thumbnails/thumb_citation_27.png": "b25cf565aadc3b428c951c8fc921456d",
+"assets/assets/images/citations/thumbnails/thumb_citation_28.png": "39372e6067f1443b7db93f89567ae09a",
+"assets/assets/images/citations/thumbnails/thumb_citation_29.png": "ab19b39aecc52c7c61f2f9ce8c32d98a",
 "assets/assets/images/experiments/benchmark.jpg": "f97cc05c0f7676cbed3036da48fc1026",
 "assets/assets/images/experiments/covid.png": "a590e71f5b47783627deb7c82cbc1b69",
 "assets/assets/images/experiments/ui_color_picker.png": "9c9e56c4adade5a5dd910df1c5e2f457",
@@ -71,25 +83,25 @@ const RESOURCES = {
 "assets/assets/images/nav_portfolio.svg": "b313c33c241f1a2cfa6f91422f3f232b",
 "assets/assets/images/nav_time.svg": "871bbe237987bb748535a30628ec211e",
 "assets/FontManifest.json": "c5085d8cff20e90940169c06778f36ed",
-"assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "f84176f5f29ef55f0ad4051b65943e6a",
+"assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
+"assets/NOTICES": "2a5c693081b59478e7b821471ce25f88",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "d1722d5cf2c7855862f68edb85e31f88",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "613e4cc1af0eb5148b8ce409ad35446d",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dd3c4233029270506ecc994d67785a37",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "99f29024aee8f4672a47cc3a81b9b84a",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "48ce1bb8a42776caa951cb782d277730",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "d8e9b6203ce2657c991f0b339ccb3a6d",
+"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
+"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e",
+"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
+"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
+"flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "c92156e910f957056cd3d571226fc27a",
-"/": "c92156e910f957056cd3d571226fc27a",
-"main.dart.js": "369abca568a7477ae1420f157856354d",
+"index.html": "60963e729e395655a20c84434051bab4",
+"/": "60963e729e395655a20c84434051bab4",
+"main.dart.js": "bb7a4036dad1a835370817d743d61503",
 "manifest.json": "75d506c1587b51c43c3e98f2ece23f05",
 "version.json": "e9d2748d0df1439f07e8b72303b3b3db"
 };
@@ -99,7 +111,6 @@ const RESOURCES = {
 const CORE = [
   "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -198,9 +209,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
